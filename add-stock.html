@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MWF - Add Stock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/logo.png" alt="MWF Logo">
+        <h2>MWF</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><img src="images/dashboard.png" alt=""> <a href="#">Dashboard</a></li>
+          <li><img src="images/stock.png" alt=""> <a href="#">Add Stock</a></li>
+          <li><img src="images/sales.png" alt=""> <a href="#">Sales</a></li>
+          <li><img src="images/reports.png" alt=""> <a href="#">Reports</a></li>
+          <li><img src="images/suppliers.png" alt=""> <a href="#">Suppliers</a></li>
+          <li><img src="images/logout.png" alt=""> <a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>Add Stock / Supplier</h1>
+      <form class="stock-form">
+        <label>Product Name:</label>
+        <input type="text" placeholder="e.g. Mahogany Timber">
+
+        <label>Type:</label>
+        <input type="text" placeholder="Wood or Furniture">
+
+        <label>Cost Price:</label>
+        <input type="number" placeholder="e.g. 100000">
+
+        <label>Expected Selling Price:</label>
+        <input type="number" placeholder="e.g. 130000">
+
+        <label>Quantity:</label>
+        <input type="number" placeholder="e.g. 50">
+
+        <label>Supplier Name:</label>
+        <input type="text" placeholder="e.g. ABC Suppliers Ltd">
+
+        <label>Contact:</label>
+        <input type="text" placeholder="e.g. +256 700000000">
+
+        <label>Color (Optional):</label>
+        <input type="text" placeholder="e.g. Brown">
+
+        <label>Measurements (Optional):</label>
+        <input type="text" placeholder="e.g. 6ft x 3ft">
+
+        <button type="submit">Save Stock</button>
+      </form>
+    </main>
+
+  </div>
+  <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.sidebar h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stock-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.stock-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.stock-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.stock-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.stock-form button:hover {
+  background-color: #1e8449;
+}
+</style>
+</body>
+</html>

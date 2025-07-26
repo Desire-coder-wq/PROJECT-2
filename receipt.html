@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MWF - Receipt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>🪵 MWF</h2>
+        <p>Wood & Furniture</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">🏠 Dashboard</a></li>
+          <li><a href="add-stock.html">📦 Add Stock</a></li>
+          <li><a href="sales-entry.html">🧾 Sales Entry</a></li>
+          <li><a href="receipt.html" class="active">🧾 Receipt</a></li>
+          <li><a href="sales-report.html">📊 Sales Report</a></li>
+          <li><a href="stock-report.html">📋 Stock Report</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="receipt-box">
+        <h1>🧾 Sales Receipt</h1>
+
+        <div class="receipt-details">
+          <p><strong>Customer Name:</strong> John Doe</p>
+          <p><strong>Product:</strong> Mahogany Table</p>
+          <p><strong>Type:</strong> Furniture</p>
+          <p><strong>Quantity:</strong> 2</p>
+          <p><strong>Price per Item:</strong> UGX 300,000</p>
+          <p><strong>Total (before transport):</strong> UGX 600,000</p>
+          <p><strong>Transport Included (5%):</strong> Yes</p>
+          <p><strong>Final Total:</strong> UGX 630,000</p>
+          <p><strong>Payment Method:</strong> Cash</p>
+          <p><strong>Sales Agent:</strong> A. Kato</p>
+          <p><strong>Date:</strong> 26th July 2025</p>
+        </div>
+
+        <button onclick="window.print()">🖨️ Print Receipt</button>
+      </div>
+    </main>
+
+  </div>
+  <style>
+  /* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo h2 {
+  font-size: 24px;
+}
+
+.sidebar .logo p {
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #34495e;
+}
+
+/* Main layout */
+.container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+/* Receipt Styling */
+.receipt-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.receipt-details p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.receipt-box button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.receipt-box button:hover {
+  background-color: #1e8449;
+}
+</style>
+</body>
+</html>

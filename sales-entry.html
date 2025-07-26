@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MWF Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>MWF</h2>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="add-stock.html">Add Stock</a>
+      <a href="sales-entry.html" class="active">Sales Entry</a>
+      <a href="receipt.html">Receipt</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </div>
+
+  <div class="main-content">
+  <h1>Sales Entry Form</h1>
+    <form>
+      <label>Customer Name:<input type="text" required></label>
+      <label>Product Type:
+        <select>
+          <option>Wood</option>
+          <option>Furniture</option>
+        </select>
+      </label>
+      <label>Product Name:<input type="text" required></label>
+      <label>Quantity:<input type="number" required></label>
+      <label>Date:<input type="date" required></label>
+      <label>Payment Type:
+        <select>
+          <option>Cash</option>
+          <option>Cheque</option>
+          <option>Bank Overdraft</option>
+        </select>
+      </label>
+      <label>Sales Agent Name:<input type="text" required></label>
+      <label><input type="checkbox"> Add 5% Transport Fee</label>
+      <button type="submit">Generate Receipt</button>
+    </form>
+  </div>
+  <style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f1ec;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #3e2b1c;
+  min-height: 100vh;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #654321;
+}
+.main-content {
+  margin-left: 220px;
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.main-content h1 {
+  color: #5c3d1c;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+label {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #333;
+}
+input, select {
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #5c3d1c;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #7a5230;
+}
+</style>
+
+</body>
+</html>
