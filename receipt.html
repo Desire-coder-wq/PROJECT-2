@@ -23,6 +23,7 @@
           <li><a href="receipt.html" class="active">🧾 Receipt</a></li>
           <li><a href="sales-report.html">📊 Sales Report</a></li>
           <li><a href="stock-report.html">📋 Stock Report</a></li>
+          <li><a href="index.html" class="logout-btn">🚪 Logout</a></li>
         </ul>
       </nav>
     </aside>
@@ -33,17 +34,17 @@
         <h1>🧾 Sales Receipt</h1>
 
         <div class="receipt-details">
-          <p><strong>Customer Name:</strong> John Doe</p>
+          <p><strong>Customer Name:</strong>Robert Tumusiime</p>
           <p><strong>Product:</strong> Mahogany Table</p>
           <p><strong>Type:</strong> Furniture</p>
           <p><strong>Quantity:</strong> 2</p>
-          <p><strong>Price per Item:</strong> UGX 300,000</p>
-          <p><strong>Total (before transport):</strong> UGX 600,000</p>
+          <p><strong>Price per Item:</strong> UGX 400,000</p>
+          <p><strong>Total (before transport):</strong> UGX 700,000</p>
           <p><strong>Transport Included (5%):</strong> Yes</p>
-          <p><strong>Final Total:</strong> UGX 630,000</p>
+          <p><strong>Final Total:</strong> UGX 530,000</p>
           <p><strong>Payment Method:</strong> Cash</p>
-          <p><strong>Sales Agent:</strong> A. Kato</p>
-          <p><strong>Date:</strong> 26th July 2025</p>
+          <p><strong>Sales Agent:</strong>Alex Winner</p>
+          <p><strong>Date:</strong> 27th July 2025</p>
         </div>
 
         <button onclick="window.print()">🖨️ Print Receipt</button>
@@ -55,7 +56,7 @@
   /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #2c3e50;
+  background-color:burlywood;
   color: white;
   min-height: 100vh;
   padding: 20px;
@@ -91,12 +92,19 @@
   display: block;
   padding: 10px;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .sidebar nav ul li a:hover,
 .sidebar nav ul li a.active {
   background-color: #34495e;
+}
+body{
+  background:linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(../pictures/background7.jpeg);
+  
+  
+
+
 }
 
 /* Main layout */
@@ -107,13 +115,12 @@
 .main-content {
   flex-grow: 1;
   padding: 40px;
-  background-color: #f0f2f5;
   min-height: 100vh;
 }
 
 /* Receipt Styling */
 .receipt-box {
-  background: white;
+  background:burlywood;
   padding: 30px;
   border-radius: 8px;
   max-width: 600px;
@@ -124,7 +131,7 @@
 .receipt-box h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color:#ff7200;
 }
 
 .receipt-details p {
@@ -136,7 +143,7 @@
 .receipt-box button {
   margin-top: 30px;
   padding: 12px 20px;
-  background-color: #27ae60;
+  background-color: #5c3d1c;;
   color: white;
   border: none;
   border-radius: 5px;
@@ -147,8 +154,22 @@
 }
 
 .receipt-box button:hover {
-  background-color: #1e8449;
+  background-color:#ffff;
+}
+/* ===== Footer ===== */
+footer {
+  background-color:burlywood;
+  color:#ff7200;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 </style>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mayondo Wood & Furniture Ltd</p>
+    </div>
+  </footer>
 </body>
 </html>

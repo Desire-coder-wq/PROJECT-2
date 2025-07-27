@@ -135,19 +135,20 @@ body{
     text-decoration: none;
     color: #fff;
 }
-.icons .ion-icons{
+/* ...existing code... */
+.icons .bx {
     color: #fff;
     font-size: 30px;
     padding-left: 14px;
     padding-top: 5px;
-
+    transition: color 0.3s ease;
 }
-.icons .ion-icons:hover{
+.icons .bx:hover {
     color: #ff7200;
         transition: 0.3s ease;
 }
-    
-    header {
+/*...existing code...*/    
+header {
       background-color:burlywood;
       color: white;
       padding: 20px;
@@ -217,11 +218,13 @@ header h1 {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  background-color: burlywood;
+
 }
 
 .nav-links a {
   color:#000;
-  font-weight: 500;
+  font-weight: 500px;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   transition: background-color var(--transition-speed), color var(--transition-speed);
@@ -246,6 +249,7 @@ header h1 {
   box-shadow: var(--shadow-light);
   text-align: center;
   transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  font-size: medium;
 }
 
 .card:hover {
@@ -302,8 +306,8 @@ header h1 {
 
 /* ===== Footer ===== */
 footer {
-  background-color: var(--primary-color);
-  color: var(--footer-color);
+  background-color:burlywood;
+  color:#ff7200;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;

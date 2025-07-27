@@ -23,7 +23,7 @@
           <li><a href="receipt.html">🧾 Receipt</a></li>
           <li><a href="sales-report.html" class="active">📊 Sales Report</a></li>
           <li><a href="stock-report.html">📋 Stock Report</a></li>
-          <li><a href="index.html">🚪 Logout</a></li>
+          <li><a href="index.html" class="logout-btn">🚪 Logout</a></li>
         </ul>
       </nav>
     </aside>
@@ -51,25 +51,50 @@
           <tbody>
             <tr>
               <td>26/07/2025</td>
-              <td>John Doe</td>
+              <td>Rashida Namutebi</td>
               <td>Mahogany Table</td>
               <td>Furniture</td>
               <td>2</td>
-              <td>UGX 300,000</td>
-              <td>UGX 600,000</td>
+              <td>UGX 400000</td>
+              <td>UGX 800000</td>
               <td>Cash</td>
-              <td>A. Kato</td>
+              <td>Alex Winnner</td>
             </tr>
             <tr>
               <td>25/07/2025</td>
-              <td>Jane Smith</td>
+              <td>Apollo Kimera</td>
               <td>Timber</td>
               <td>Wood</td>
               <td>10</td>
-              <td>UGX 50,000</td>
-              <td>UGX 500,000</td>
+              <td>UGX 60,000</td>
+              <td>UGX 600,000</td>
               <td>Cheque</td>
-              <td>B. Naka</td>
+              <td>A DESIRE</td>
+              </td>
+            </tr>
+                        <tr>
+              <td>27/07/2025</td>
+              <td>kyamagero Diso</td>
+              <td>cupbord</td>
+              <td>Wood</td>
+              <td>15</td>
+              <td>UGX 80,000</td>
+              <td>UGX 1,200,000</td>
+              <td>Cash</td>
+              <td>Alex winner</td>
+              </td>
+            </tr>
+                                    <tr>
+              <td>26/07/2025</td>
+              <td>kyamagero Diso</td>
+              <td>bed</td>
+              <td>Wood</td>
+              <td>5</td>
+              <td>UGX 250,000</td>
+              <td>UGX 1,250,000</td>
+              <td>cheque</td>
+              <td>A Desire</td>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -88,11 +113,10 @@ body {
 .container {
   display: flex;
 }
-
-/* Sidebar */
+  /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #2c3e50;
+  background-color:burlywood;
   color: white;
   min-height: 100vh;
   padding: 20px;
@@ -128,13 +152,14 @@ body {
   display: block;
   padding: 10px;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .sidebar nav ul li a:hover,
 .sidebar nav ul li a.active {
   background-color: #34495e;
 }
+
 
 /* Main Content */
 .main-content {
@@ -154,7 +179,7 @@ body {
 .report-box h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color:#ff7200;
 }
 
 .report-table {
@@ -178,7 +203,23 @@ body {
 .report-table tr:hover {
   background-color: #f0f0f0;
 }
+footer{
+        position:fixed;
+        left: 0;
+        width: 100%;
+        bottom:0;
+        background:burlywood;
+        color: #333;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 100;
+        font-weight: 500;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.5); 
+      }
 </style>
+    <footer>
+    <p>&copy; 2025 Mayondo Wood & Furniture Ltd</p>
+  </footer>
 </body>
 </html>
 

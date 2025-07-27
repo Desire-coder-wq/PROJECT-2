@@ -3,62 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MWF Dashboard</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <title>MWF Dashboard with Sidebar & Logout</title>
+
 </head>
 <body>
-    
-
-  <header>
-    <div class="container">
-      <h1>Mayondo Wood & Furniture</h1>
-      <nav> 
-        <ul class="nav-links">
+      <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>🪵 MWF</h2>
+        <p>Wood & Furniture</p>
+      </div>
+      <nav>
+        <ul>
           <li><a href="dashboard.html">🏠 Dashboard</a></li>
           <li><a href="add-stock.html">📦 Add Stock</a></li>
-          <li><a href="sales-entry.html">🧾 Sales-entry</a></li>
-           <li><a href="receipt.html">📦 Receipt</a></li>
-           <li><a href="sales-report.html">🧾 Sales-report</a></li>
-                      <li><a href="stock-report.html">🧾 Stock-report</a></li>
-        </ul>
+          <li><a href="sales-entry.html">🧾 Sales Entry</a></li>
+          <li><a href="receipt.html">🧾 Receipt</a></li>
+          <li><a href="sales-report.html" class="active">📊 Sales Report</a></li>
+          <li><a href="stock-report.html">📋 Stock Report</a></li>
+          <li><a href="index.html" class="logout-btn">🚪 Logout</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-
+    </aside>
   <main class="container">
     <section class="grid-cards">
       <div class="card">
         <h2>Total Sales</h2>
-        <p>UGX 12,500,000</p>
+        <p>UGX 123,000,000</p>
       </div>
       <div class="card">
         <h2>Stock Items</h2>
-        <p>120 Items</p>
+        <p>400 Items</p>
       </div>
       <div class="card">
         <h2>Customers</h2>
-        <p>36 Companies</p>
+        <p>20 Companies</p>
       </div>
     </section>
 
     <h2>Featured Products</h2>
     <section class="product-grid">
+           <div class="product">
+        <img src="../pictures/dinning-table.jpeg" alt="Dinning table">
+        <p>mordern dinning-table-UGX 25,000,000</p>
+      </div>
+             <div class="product">
+        <img src="../pictures/drawer.jpeg" alt="Drawer">
+        <p>mordern drawer-UGX 800,000</p>
+      </div>
+              <div class="product">
+        <img src="../pictures/1.jpeg" alt="finished Products"> 
+        <p>More of the finished products</p>
+      </div>
+            <div class="product">
+        <img src="../pictures/2.jpeg" alt="Cup-board">
+        <p>Cup-board-UGX 25,000,000</p>
+      </div>
+             <div class="product">
+        <img src="../pictures/furniture.jpeg" alt="Other products">
+        <p>Same price</p>
+             </div>
       <div class="product">
-        <img src="images/sofa.jpg" alt="Sofa">
+        <img src="../pictures/sofa.jpeg" alt="Sofa" />
         <p>Modern Sofa - UGX 1,500,000</p>
       </div>
       <div class="product">
-        <img src="images/bed.jpg" alt="Bed">
+        <img src="../pictures/bed.jpeg" alt="Bed" />
         <p>Hardwood Bed - UGX 2,000,000</p>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Mayondo Wood & Furniture Ltd</p>
-    </div>
+    <p>&copy; 2025 Mayondo Wood & Furniture Ltd</p>
   </footer>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family:  sans-serif;
+      color:#ff7200;
+    }
+
+    body {
+      background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../pictures/5.jpeg);
+      line-height: 1.6;
+      display: flex;
+      min-height: 200vh;
+    }
+  /* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color:burlywood;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo h2 {
+  font-size: 24px;
+}
+
+.sidebar .logo p {
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #34495e;
+}
+
+    /* Main content */
+    main.container {
+      margin-left: 240px; /* space for sidebar */
+      padding: 2rem;
+      width: calc(100% - 240px);
+      flex-grow: 1;
+    }
+
+    /* Grid cards */
+    .grid-cards {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      color:#ff7200;
+    }
+
+    .card p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color:burlywood;
+    }
+
+    /* Featured products */
+    h2 {
+      margin-bottom: 1rem;
+      color:#ff7200;
+      font-weight: 700;
+    }
+
+    .product-grid {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      min-width: 280px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .product p {
+      font-weight: 600;
+      color: #2f4f4f;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Footer */
+    footer {
+      background-color:burlywood;
+      color: #d4e4d4;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      left: 240px;
+      width: calc(100% - 240px);
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+ /* Responsive */
+    @media (max-width: 768px) {
+      aside.sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.75rem 1rem;
+        box-shadow: none;
+      }
+    }
+      aside.sidebar h1 {
+        flex-grow: 1;
+        margin-bottom: 0;
+        font-size: 1.25rem;
+      }
+      nav.sidebar-nav ul {
+        flex-direction: row;
+        gap: 1rem;
+      }
+      nav.sidebar-logout {
+        margin-left: auto;
+      }
+      main.container {
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
+      }
+footer {
+        position:fixed;
+        left: 0;
+        width: 100%;
+        bottom:0;
+        background:burlywood;
+        color: #333;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 100;
+        font-weight: 500;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.5);
+        margin-top:0;
+      }
+  /* ...existing-code...*/ 
+  </style>
 </body>
 </html>

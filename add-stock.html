@@ -4,174 +4,208 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MWF - Add Stock</title>
+  <link rel="stylesheet" href="css/bootstrap-5.0.2-dist/css/bootstrap-grid.css">
   <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-
-  <div class="container">
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="logo">
-        <img src="images/logo.png" alt="MWF Logo">
-        <h2>MWF</h2>
-      </div>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Mayondo Wood & Furniture</h1>
       <nav>
-        <ul>
-          <li><img src="images/dashboard.png" alt=""> <a href="#">Dashboard</a></li>
-          <li><img src="images/stock.png" alt=""> <a href="#">Add Stock</a></li>
-          <li><img src="images/sales.png" alt=""> <a href="#">Sales</a></li>
-          <li><img src="images/reports.png" alt=""> <a href="#">Reports</a></li>
-          <li><img src="images/suppliers.png" alt=""> <a href="#">Suppliers</a></li>
-          <li><img src="images/logout.png" alt=""> <a href="#">Logout</a></li>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">🏠 Dashboard</a></li>
+          <li><a href="add-stock.html">📦 Add Stock</a></li>
+          <li><a href="sales-entry.html">🧾 Sales-entry</a></li>
+          <li><a href="receipt.html">📦 Receipt</a></li>
+          <li><a href="sales-report.html">🧾 Sales-report</a></li>
+          <li><a href="stock-report.html">🧾 Stock-report</a></li>
+          <li><a href="index.html" class="logout-btn">🚪 Logout</a></li>
         </ul>
       </nav>
-    </aside>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <h1>Add Stock / Supplier</h1>
-      <form class="stock-form">
-        <label>Product Name:</label>
-        <input type="text" placeholder="e.g. Mahogany Timber">
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>Supplier</h1>
+    <form class="stock-form">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" placeholder="ie.bed,table,chair">
 
-        <label>Type:</label>
-        <input type="text" placeholder="Wood or Furniture">
+      <label for="type">Type:</label>
+      <input type="text" id="type" name="type" placeholder="Wood or Furniture">
 
-        <label>Cost Price:</label>
-        <input type="number" placeholder="e.g. 100000">
+      <label for="costPrice">Cost Price:</label>
+      <input type="number" id="costPrice" name="costPrice" placeholder="ie.400000">
 
-        <label>Expected Selling Price:</label>
-        <input type="number" placeholder="e.g. 130000">
+      <label for="sellingPrice">Expected Selling Price:</label>
+      <input type="number" id="sellingPrice" name="sellingPrice" placeholder="i.e 130000">
 
-        <label>Quantity:</label>
-        <input type="number" placeholder="e.g. 50">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" placeholder="e.g. 70">
 
-        <label>Supplier Name:</label>
-        <input type="text" placeholder="e.g. ABC Suppliers Ltd">
+      <label for="supplierName">Supplier Name:</label>
+      <input type="text" id="supplierName" name="supplierName" placeholder="e.g. ABC Suppliers Ltd">
 
-        <label>Contact:</label>
-        <input type="text" placeholder="e.g. +256 700000000">
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" placeholder="e.g. +256-------123456">
 
-        <label>Color (Optional):</label>
-        <input type="text" placeholder="e.g. Brown">
+      <label for="color">Color (Optional):</label>
+      <input type="text" id="color" name="color" placeholder="e.g. Brown">
 
-        <label>Measurements (Optional):</label>
-        <input type="text" placeholder="e.g. 6ft x 3ft">
+      <label for="measurements">Measurements (Optional):</label>
+      <input type="text" id="measurements" name="measurements" placeholder="e.g. 3ft x 3ft">
 
-        <button type="submit">Save Stock</button>
-      </form>
-    </main>
+      <button type="submit">Save Stock</button>
+    </form>
+  </main>
 
-  </div>
-  <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mayondo Wood & Furniture Ltd</p>
+  </footer>
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-body {
-  background-color: #f0f2f5;
-}
+    body {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../pictures/background5.jpeg);
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-.container {
-  display: flex;
-}
+    a {
+      text-decoration: none;
+      color: var(--accent-color, #000);
+    }
 
-/* Sidebar */
-.sidebar {
-  width: 250px;
-  background-color: #2c3e50;
-  color: white;
-  min-height: 100vh;
-  padding: 20px;
-}
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.sidebar .logo {
-  text-align: center;
-  margin-bottom: 30px;
-}
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 0;
+    }
 
-.sidebar .logo img {
-  width: 60px;
-  height: 60px;
-}
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 1.5rem 0;
+    }
 
-.sidebar h2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
+    header h1 {
+      margin-bottom: 0.5rem;
+      color: #ff7200;
+      text-align: center;
+    }
 
-.sidebar nav ul {
-  list-style: none;
-}
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background-color: burlywood;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
 
-.sidebar nav ul li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
+    .nav-links a {
+      color: #000;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+    }
 
-.sidebar nav ul li img {
-  width: 20px;
-  margin-right: 10px;
-}
+    .nav-links a:hover {
+      background-color: #fff;
+    }
 
-.sidebar nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
+    .main-content {
+      flex-grow: 1;
+      padding: 40px 20px;
+      color: #333;
+    }
 
-/* Main Content */
-.main-content {
-  flex-grow: 1;
-  padding: 40px;
-}
+    .main-content h1 {
+      margin-bottom: 20px;
+      color: #ff7200;
+      text-align: center;
+    }
 
-.main-content h1 {
-  margin-bottom: 20px;
-  color: #333;
-}
+    .stock-form {
+      background-color:burlywood;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
 
-.stock-form {
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  max-width: 600px;
-}
+    .stock-form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
 
-.stock-form label {
-  display: block;
-  margin: 15px 0 5px;
-  font-weight: bold;
-}
+    .stock-form input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-.stock-form input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+    .stock-form button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:#ff7200;
+      color: white;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-.stock-form button {
-  margin-top: 20px;
-  padding: 12px;
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
+    .stock-form button:hover {
+      background-color:#fff;
+    }
 
-.stock-form button:hover {
-  background-color: #1e8449;
-}
-</style>
+    footer {
+      background-color: burlywood;
+      color: #000;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .main-content {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+
+  <script src="css/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
+
