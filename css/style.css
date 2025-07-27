@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-        background: linear-gradient(to top,rgb(0,0,0,0.5)50% ,rgb(0,0,0,0.5)50%),url(../pictures/bck3.jpeg);
+        background:linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(background9.jpeg);
         background-position: center;
         background-size: cover;
 }
