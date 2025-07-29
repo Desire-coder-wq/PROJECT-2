@@ -2,11 +2,11 @@
     margin:0px;
     padding: 0px;
 }
-body{
+/* body{
         background:linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(background9.jpeg);
         background-position: center;
         background-size: cover;
-}
+} */
 .icon{
     width: 200px;
     float: left;
@@ -312,5 +312,8 @@ footer {
   padding: 1rem 0;
   font-size: 0.9rem;
   transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+.Rose{
+  background-image: url(../Images/background9.jpeg);
 }
     
