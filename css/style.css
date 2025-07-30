@@ -3,9 +3,12 @@
     padding: 0px;
   }
   * body{
-         background:linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(background9.jpeg); 
+          
         background-position: center;
         background-size: cover;
+        min-height: 100vh;
+        flex-direction: column;
+        height: 100%;
 } 
 .icon{
     width: 200px;
@@ -309,11 +312,47 @@ footer {
   background-color:burlywood;
   color:#ff7200;
   text-align: center;
-  padding: 1rem 0;
+  padding: 15px 0;
+  width: 100%;
   font-size: 0.9rem;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
+  
 }
-/* .Rose{
-  background-image: url(../Images/background9.jpeg);
-} */
+.container.Rose{
+  flex: 1;
+}
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .bg-cover {
+      background: url(../image/background9.jpeg) no-repeat center center;
+      background-size: cover;
+      width: 100vw;
+      min-height:100vh ;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .card-container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card.fullscreen-card{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5); /*optionaloverlay for readability */
+    }
     
