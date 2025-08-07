@@ -1,5 +1,5 @@
     body {
-      background: url(../image/background8.jpeg) no-repeat center center;
+      /* background: url(../image/background8.jpeg) no-repeat center center; */
       font-family: Arial, sans-serif;
       padding: 20px;
     }
@@ -67,3 +67,45 @@
       color: #ff7200;
       text-decoration: none;
     }
+    
+    .bg-cover {
+      background: url(../image/background8.jpeg) no-repeat center center;
+      background-size: cover;
+      width: 100vw;
+      min-height:100vh ;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    /* Make sure the card container fills the viewport */
+    .card-container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+        /* Make sure the card container fills the viewport if you want */
+    .card.fullscreen-card{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.1);
+    }
+      /* Add your custom CSS below */
+    .carousel-inner img {
+      margin: auto;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }  
