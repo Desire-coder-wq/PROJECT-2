@@ -52,11 +52,18 @@
       <label>Sales Agent Name:<input type="text" required></label>
       <label><input type="checkbox"> Add 5% Transport Fee</label>
       <button type="submit">Generate Receipt</button>
+          <button id="downloadPdf">Download PDF</button>
+  <button id="downloadExcel">Download Excel</button>
     </form>
+
   </div>
+  <script src="sales.js"></script>
     <footer>
     <p>&copy; 2025 Mayondo Wood & Furniture Ltd</p>
   </footer>
- 
+   <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </body>
 </html>
