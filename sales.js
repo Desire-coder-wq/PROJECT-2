@@ -14,9 +14,8 @@
 
 
       doc.autoTable({ 
-        html: '#salesReportTable',  //This tells autoTable to grab the HTML table element with ID suppliersTable.
-                                //It converts the entire table — headers and rows — into a styled table in the PDF.
-        startY: 30, //Sets the vertical starting position (Y-coordinate) of the table in the PDF.
+        html: '#salesReportTable',  
+        startY: 30,
         styles: { fontSize: 8 },
         headStyles: { fillColor: [0, 119, 204] },
       });
